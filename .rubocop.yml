@@ -1,0 +1,35 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'bin/*'
+    - 'config/**/*'
+Metrics/MethodLength:
+  Max: 25
+Metrics/ClassLength:
+  Max: 200
+Metrics/LineLength:
+  Max: 120
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+Style/SymbolArray:
+  EnforcedStyle: brackets
+Style/AsciiComments:
+  Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/Documentation:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
