@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title
+      | Timesheet
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag "https://use.fontawesome.com/releases/v5.4.1/css/all.css", integrity: "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz", crossorigin: "anonymous"
+  body
+    = render "layouts/navbar"
+    .container-fluid
+      .row
+        = render "layouts/sidebar"
+        main.col-md-9.ml-sm-auto.col-lg-10[role="main"]
+          = yield

@@ -1,0 +1,18 @@
+nav.navbar.navbar-dark.fixed-top.bg-dark.flex-md-nowrap.p-0
+  = link_to root_url, class: "navbar-brand col-sm-3 col-md-2 mr-0 logo" do
+    = image_tag "logo.png"
+  .navbar-content
+    .search-wrapper
+      input.form-control.search-text[type="text" placeholder="Search" aria-label="Search"]
+      button.btn.btn-submit[type="submit"]
+        i.fas.fa-search
+    ul
+      li
+        a[href="#"]
+          span
+            | Admin
+      li
+        a[href="#"]
+          i.fas.fa-sign-out-alt
+          span
+            | Sign out

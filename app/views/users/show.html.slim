@@ -1,0 +1,52 @@
+- provide :page_title, t(".title")
+.topbar-wrapper
+  .row
+    .col-lg-3.col-md-4.col-sm-4.col-xs-12
+      h4.page-title
+        = yield :page_title
+.content-wrapper
+  = render "shared/flash"
+  .row
+    .col-md-12
+      .content-box
+        table.table.table-striped
+          thead
+            tr
+              th[scope="col"]
+                = t ".id"
+              th[scope="col"]
+                = t ".firstname"
+              th[scope="col"]
+                = t ".lastname"
+              th[scope="col"]
+                = t ".email"
+              th[scope="col"]
+                = t ".birthday"
+              th[scope="col"]
+                = t ".gender"
+              th[scope="col"]
+                = t ".tel"
+              th[scope="col"]
+                = t ".created_at"
+              th[scope="col"]
+                = t ".updated_at"
+          tbody
+            tr
+              th[scope="row"]
+                = @user.id
+              td
+                = @user.first_name
+              td
+                = @user.last_name
+              td
+                = @user.email
+              td
+                = @user.birthday
+              td
+                = @user.gender
+              td
+                = @user.phone
+              td
+                = @user.created_at
+              td
+                = @user.updated_at

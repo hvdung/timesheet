@@ -1,0 +1,11 @@
+vi:
+  users:
+    create:
+      success: "Tạo người dùng thành công!"
+      error: "Lỗi khi tạo người dùng."
+    update:
+      success: "Sửa người dùng thành công!"
+      error: "Lỗi khi sửa thông tin người dùng."
+    destroy:
+      success: "Xóa người dùng thành công!"
+      error: "Lỗi khi xóa thông tin người dùng."
