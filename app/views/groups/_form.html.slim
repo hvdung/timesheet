@@ -1,0 +1,4 @@
+= simple_form_for group_form do |f|
+  = f.input :name
+  = f.input :user_ids, as: :check_boxes, collection: group_form.users, wrapper_html: {class: "users_checkbox_field"}
+  = f.submit yield(:btn_name), class: "btn btn-primary"

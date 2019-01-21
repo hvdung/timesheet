@@ -29,6 +29,9 @@ a:hover{
   z-index: 100;
   padding: 61px 0 0;
   box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  li{
+    border-bottom: 1px solid #ebebeb;
+  }
 }
 
 .sidebar-sticky {
@@ -244,13 +247,24 @@ a:hover{
     font-size: 15px;
     font-weight: 600;
   }
-  input[type="radio"], input[type="checkbox"]{
+  input[type="radio"]{
     margin-right: 10px;
     margin-left: 5px;
   }
 }
 .link-col{
   margin-right: 10px;
+}
+.users_checkbox_field{
+  height: 300px;
+  overflow: auto;
+  .collection_check_boxes{
+    font-weight: 400;
+    &:hover{
+      cursor: pointer;
+      color: $color;
+    }
+  }
 }
 
 .pagy-nav{
@@ -261,15 +275,18 @@ a:hover{
     width: auto;
     height: 30px;
     line-height: 30px;
-    padding: 0 15px;
     text-align: center;
     background: #343a40;
     color: #fff;
     margin: 0 5px;
     font-size: 12px;
     a{
+      padding: 0 15px;
       display: block;
       color: #fff;
+    }
+    &.active,&.disabled{
+      padding: 0 15px;
     }
     &:hover{
       opacity: 0.5;

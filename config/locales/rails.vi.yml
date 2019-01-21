@@ -32,7 +32,9 @@ vi:
         first_name: "Tên"
         last_name: "Họ"
         email: "Email"
-        phone: "Số điện thoại "
+        phone: "Số điện thoại"
+      group:
+        name: "Tên nhóm"
   date:
     formats:
       date_default: "%m/%d/%Y"

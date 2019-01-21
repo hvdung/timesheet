@@ -51,6 +51,24 @@ vi:
         male: "Nam"
         female: "Nữ"
         other: "Khác"
+  groups:
+    index:
+      title: "Danh sách nhóm"
+      id: "ID"
+      name: "Tên nhóm"
+      action: "Hành động"
+      addnew: "Thêm mới"
+    new:
+      title: "Thêm mới người dùng"
+      button: "Thêm mới"
+    edit:
+      title: "Sửa người dùng"
+      button: "Sửa"
+    group:
+      list_user: "Danh sách người dùng"
+      edit: "Sửa"
+      delete: "Xóa"
+      confirm: "Bạn chắc chứ?"
   shared:
     error_messages:
       title: "Lỗi form gồm "
@@ -60,3 +78,4 @@ vi:
       sign_out: "Đăng xuất"
     sidebar:
       users: "Người dùng"
+      groups: "Nhóm"
