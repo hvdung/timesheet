@@ -1,0 +1,21 @@
+tr
+  th[scope="row"]
+    = user.id
+  td
+    = user.first_name
+  td
+    = user.last_name
+  td
+    = user.email
+  td
+    = user.birthday
+  td
+    = t ".gender.#{user.gender}"
+  td
+    = user.phone
+  td
+    = link_to t(".view"), user_path(user), class: "link-col"
+    |
+    = link_to t(".edit"), edit_user_path(user), class: "link-col"
+    |
+    = link_to t(".delete"), user_path(user.id), method: :delete, data:{confirm: t(".confirm")}

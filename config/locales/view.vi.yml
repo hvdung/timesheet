@@ -1,0 +1,61 @@
+vi:
+  users:
+    index:
+      title: "Danh sách người dùng"
+      id: "ID"
+      firstname: "Tên"
+      lastname: "Họ"
+      email: "Email"
+      tel: "Số điện thoại"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      action: "Hành động"
+      addnew: "Thêm mới"
+    show:
+      title: "Chi tiết người dùng"
+      id: "ID"
+      firstname: "Tên"
+      lastname: "Họ"
+      email: "Email"
+      tel: "Số điện thoại"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      created_at: "Tạo lúc"
+      updated_at: "Sửa lúc"
+    new:
+      title: "Thêm mới người dùng"
+      button: "Thêm mới"
+    edit:
+      title: "Sửa người dùng"
+      button: "Sửa"
+    form:
+        firstname: "Tên"
+        ph_firstname: "Nhập Tên"
+        lastname: "Họ"
+        ph_lastname: "Nhập họ"
+        email: "Email"
+        ph_email: "Nhập email"
+        tel: "Số điện thoại"
+        ph_tel: "Nhập số điện thoại"
+        gender: "Giới tính"
+        birthday: "Ngày sinh"
+        male: "Nam"
+        female: "Nữ"
+        other: "Khác"
+    user:
+      view: "Xem"
+      edit: "Sửa"
+      delete: "Xóa"
+      confirm: "Bạn chắc chứ?"
+      gender:
+        male: "Nam"
+        female: "Nữ"
+        other: "Khác"
+  shared:
+    error_messages:
+      title: "Lỗi form gồm "
+      error: "lỗi"
+  layouts:
+    sidebar:
+      users: "Người dùng"
+  
