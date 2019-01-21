@@ -5,9 +5,11 @@ vi:
         blank: &blank "không được để trống"
         taken: &taken "đã có người tạo"
         too_long: &long "quá 255 kí tự"
+        too_short: &short "quá ngắn, ít nhất 3 kí tự"
   activemodel:
     errors:
       messages:
         blank: *blank
         taken: *taken
         too_long: *long
+        too_short: *short

@@ -56,5 +56,7 @@ vi:
       title: "Lỗi form gồm "
       error: "lỗi"
   layouts:
+    navbar:
+      sign_out: "Đăng xuất"
     sidebar:
       users: "Người dùng"

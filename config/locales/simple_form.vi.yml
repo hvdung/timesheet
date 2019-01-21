@@ -8,6 +8,8 @@ vi:
         birthday: "Ngày sinh"
         gender: "Giới tính"
         phone: "Số điện thoại"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
     placeholders:
       user:
         first_name: "Nhập tên"

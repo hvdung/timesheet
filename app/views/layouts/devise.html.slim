@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title
+      | Timesheet
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+  body#devise-body
+    .devise-flash
+      .alert-msg
+        - if notice
+          .alert.alert-info
+            = notice
+        - if alert
+          .alert.alert-warning
+            = alert
+    .devise-wrapper
+      = yield
