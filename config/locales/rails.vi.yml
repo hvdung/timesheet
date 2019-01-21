@@ -1,13 +1,13 @@
 vi:
   activerecord:
     errors:
-      models:
-        user:
-          attributes:
-            first_name:
-              blank: "không được để trống"
-            last_name:
-              blank: "không được để trống"
-            email:
-              blank: "không được để trống"
-              taken: "đã có người tạo"
+      messages:
+        blank: &blank "không được để trống"
+        taken: &taken "đã có người tạo"
+        too_long: &long "quá 255 kí tự"
+  activemodel:
+    errors:
+      messages:
+        blank: *blank
+        taken: *taken
+        too_long: *long

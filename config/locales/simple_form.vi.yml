@@ -1,0 +1,16 @@
+vi:
+  simple_form:
+    labels:
+      user:
+        first_name: "Tên"
+        last_name: "Họ"
+        email: "Email"
+        birthday: "Ngày sinh"
+        gender: "Giới tính"
+        phone: "Số điện thoại"
+    placeholders:
+      user:
+        first_name: "Nhập tên"
+        last_name: "Nhập họ"
+        email: "Nhập email"
+        phone: "Nhập số điện thoại"
