@@ -5,14 +5,14 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user_form = UserForm.new
   end
 
   def create
-    @user = User.new user_params
-    if @user.save
+    @user_form = UserForm.new user_params
+    if @user_form.save
       flash[:success] = t ".success"
-      redirect_to user_path @user
+      redirect_to user_path @user_form.user
     else
       flash.now[:danger] = t ".error"
       render :new
@@ -20,10 +20,12 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user_form = UserForm.new nil, (User.find params[:id])
   end
 
   def update
-    if @user.update user_params
+    @user_form = UserForm.new user_params, (User.find params[:id])
+    if @user_form.save
       flash[:success] = t ".success"
       redirect_to users_path
     else
@@ -38,11 +40,10 @@ class UsersController < ApplicationController
   def destroy
     if @user.destroy
       flash[:success] = t ".success"
-      redirect_to users_path
     else
       flash[:danger] = t ".error"
-      redirect_to users_path
     end
+    redirect_to users_path
   end
 
   private
