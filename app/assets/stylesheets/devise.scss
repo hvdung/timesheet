@@ -1,0 +1,55 @@
+#devise-body{
+  background: #F4F7F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  >a{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: 700;
+    color: #252525;
+  }
+}
+.devise-wrapper{
+  background: #fff;
+  box-shadow: 0 0 35px #e2e2e2;
+  padding: 35px 55px;
+  display: inline-block;
+  h2{
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .form-control{
+    width: 400px;
+    border-radius: 50px;
+  }
+  .btn{
+    width: 100%;
+    border-radius: 50px;
+    background: #252525;
+    color: #fff;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    &:hover{
+      background: #f33155;
+      box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+    }
+  }
+  a{
+    color: #252525;
+    font-size: 14px;
+    &:hover{
+      color: #f33155;
+    }
+  }
+  .field{
+    margin-bottom: 20px;
+    label,em{
+      font-size: 12px;
+    }
+  }
+}

@@ -6,7 +6,9 @@ ruby "2.5.1"
 gem "bootstrap", "~> 4.2.1"
 gem "coffee-rails", "~> 4.2"
 gem "config"
+gem "devise"
 gem "dotenv-rails"
+gem "draper"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "mysql2"
@@ -31,6 +33,7 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+  gem "letter_opener_web"
 end
 
 group :test do

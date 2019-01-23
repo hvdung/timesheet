@@ -1,5 +1,5 @@
-class UsersController < ApplicationController
-  before_action :find_user, only: [:edit, :update, :show, :destroy]
+class UsersController < AuthorizeController
+  before_action :find_user, only: [:show, :destroy]
   def index
     @pagy, @users = pagy User.all, items: Settings.per_page
   end
