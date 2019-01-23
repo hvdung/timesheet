@@ -5,7 +5,7 @@ class UserDecorator < Draper::Decorator
     if first_name.present? && last_name.present?
       "#{first_name} #{last_name}".strip
     else
-      "#{email}"
+      email.to_s
     end
   end
 end

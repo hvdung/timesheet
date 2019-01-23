@@ -2,8 +2,9 @@ class UserForm
   include Virtus.model
   include ActiveModel::Model
 
-  attr_accessor :user
-  attr_accessor :record
+  attr_reader :password
+  attr_reader :user
+  attr_reader :record
 
   attribute :first_name, String
   attribute :last_name, String
@@ -38,8 +39,9 @@ class UserForm
   private
 
   def persist!
+    @password = Devise.friendly_token.first(8)
     @user.update! first_name: first_name, last_name: last_name, birthday: birthday, gender: gender,
-                  phone: phone, email: email
+                  phone: phone, email: email, password: password
     true
   end
 end
