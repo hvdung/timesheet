@@ -2,7 +2,7 @@
   = f.input :first_name
   = f.input :last_name
   = f.input :email, as: :email
-  = f.input :birthday, as: :date, html5: true
+  = f.input :birthday, input_html: { class: "datepicker", value: f.object.formated_birthday }
   = f.input :gender, as: :radio_buttons, wrapper_html: { class: "radio_btn" } , collection: [["male", t(".male")], ["female", t(".female")], ["other", t(".other")]], label_method: :second, value_method: :first
   = f.input :phone, as: :tel
   = f.submit yield(:btn_name), class: "btn btn-primary"

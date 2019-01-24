@@ -4,8 +4,9 @@ vi:
       messages:
         blank: &blank "không được để trống"
         taken: &taken "đã có người tạo"
-        too_long: &long "quá 255 kí tự"
-        too_short: &short "quá ngắn, ít nhất 3 kí tự"
+        too_long: &long "quá dài"
+        too_short: &short "quá ngắn"
+        not_a_number: &not_a_number "phải là số"
   activemodel:
     errors:
       messages:
@@ -13,3 +14,30 @@ vi:
         taken: *taken
         too_long: *long
         too_short: *short
+        not_a_number: *not_a_number
+        not_email: "định dạng xxx%{suffix}"
+        not_phone: "phải là số và bắt đầu bằng số 0"
+      models:
+        user:
+          attributes:
+            first_name:
+              too_long: "dài hơn %{count} kí tự"
+            last_name:
+              too_long: "dài hơn %{count} kí tự"
+            phone:
+              too_short: "ít nhất %{count} số"
+              too_long: "tối đa %{count} số"
+    attributes:
+      user:
+        first_name: "Tên"
+        last_name: "Họ"
+        email: "Email"
+        phone: "Số điện thoại "
+  date:
+    formats:
+      date_default: "%m/%d/%Y"
+  support:
+    array:
+      last_word_connector: ", và "
+      two_words_connector: " và "
+      words_connector: ", "
