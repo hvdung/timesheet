@@ -3,5 +3,9 @@ nav.col-md-2.d-none.d-md-block.bg-light.sidebar
     ul.nav.flex-column
       li.nav-item
         = link_to users_path, class: "nav-link active" do
-          i.fas.fa-users
+          i.fas.fa-user
           = t(".users")
+      li.nav-item
+        = link_to groups_path, class: "nav-link" do
+          i.fas.fa-users
+          = t(".groups")

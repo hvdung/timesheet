@@ -36,7 +36,7 @@ class UserForm
   def save
     valid? && persist!
   end
- 
+
   def formated_birthday
     if birthday.is_a? Date
       I18n.l(birthday, format: :date_default)
@@ -52,9 +52,20 @@ class UserForm
   end
 
   def persist!
-    @password = Devise.friendly_token.first(8)
-    @user.update! first_name: first_name, last_name: last_name, birthday: datetype_birthday, gender: gender,
-                  phone: phone, email: email, password: password
+    user_attributes = {
+      first_name: first_name,
+      last_name: last_name,
+      birthday: datetype_birthday,
+      gender: gender,
+      phone: phone,
+      email: email
+    }
+    if persisted?
+      @user.update! user_attributes
+    else
+      @password = Devise.friendly_token.first(8)
+      @user.update! user_attributes.merge(password: password)
+    end
     true
   end
 end

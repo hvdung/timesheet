@@ -9,3 +9,14 @@ vi:
     destroy:
       success: "Xóa người dùng thành công!"
       error: "Lỗi khi xóa thông tin người dùng."
+  groups:
+    create:
+      success: "Tạo nhóm thành công!"
+      error: "Lỗi khi tạo nhóm."
+    update:
+      success: "Sửa nhóm thành công!"
+      error: "Lỗi khi sửa thông tin nhóm."
+    destroy:
+      success: "Xóa nhóm thành công!"
+      error: "Lỗi khi xóa thông tin nhóm."
+

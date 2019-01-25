@@ -10,9 +10,14 @@ vi:
         phone: "Số điện thoại"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      group:
+        name: "Tên nhóm"
+        user_ids: "Người dùng"
     placeholders:
       user:
         first_name: "Nhập tên"
         last_name: "Nhập họ"
         email: "Nhập email"
         phone: "Nhập số điện thoại"
+      group:
+        name: "Nhập tên nhóm"
